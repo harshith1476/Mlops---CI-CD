@@ -34,7 +34,7 @@ class TestPredictionApplication(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(
             response.get_json()["prediction"],
-            "PASS"
+            "FAIL"  # DEMO_FAILURE
         )
 
     def test_low_performance_prediction(self):
